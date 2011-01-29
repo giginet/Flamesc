@@ -5,7 +5,7 @@ from pywaz.core import *
 from pywaz.input import *
 from pywaz.utils import *
 from pywaz.graphic import *
-from player import *
+from paper.player import *
 
 
 class TitleScene(Scene):
