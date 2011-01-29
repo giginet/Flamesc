@@ -6,8 +6,8 @@ from core import *
 import os
 
 class Image(pygame.sprite.Sprite):
-    def __init__(self, x=0 ,y=0 ,w=100, h=100, path=u""):
-        #super(Image, self).__init__(x,y,w,h)
+    def __init__(self, x=0 ,y=0, path=u""):
+        super(Image, self).__init__()
         self.image = pygame.image.load(path).convert()
         self.rect = self.image.get_rect()
         self.width = self.rect.width

@@ -9,7 +9,7 @@ from pywaz.graphic import *
 
 class TitleScene(Scene):
     def __init__(self):
-        self.image = Image(10,10,100,100,u"../resources/image/kawaz.png")
+        self.image = Image(10,10,u"../resources/image/kawaz.png")
         
     def act(self):
         if Mouse.is_press("LEFT"):
