@@ -12,7 +12,7 @@ class TitleScene(Scene):
         self.image = Image(10,10,100,100,u"../resources/image/kawaz.png")
         
     def act(self):
-        if Mouse.is_press("RIGHT"):
+        if Mouse.is_press("LEFT"):
             Game.get_scene_manager().change_scene('main')
         
     def render(self):

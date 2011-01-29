@@ -6,10 +6,11 @@ from pywaz.input import *
 from pywaz.utils import *
 from pywaz.graphic import *
 from scenes import *
+import settings
 
 def main():
     pygame.init() # pygameの初期化
-    Game.set_caption(u'Flamesc')
+    Game.set_caption(settings.CAPTION)
     Game.get_scene_manager().set_scenes({'title':TitleScene(), 'main':MainScene()})
     Game.get_scene_manager().change_scene('title')
     return Game.mainloop()
