@@ -11,7 +11,7 @@ import settings
 
 
 class Player(Paper):
-    _filepath = u"/resources/"
+    _filepath = u"/resources/image/kawaz.png"
     INITIAL = {'x':0, 'y':0}
     
     def __init__(self):

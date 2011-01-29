@@ -30,10 +30,11 @@ class Vector(object):
         return self.x == v.x and self.y == v.y
     
     def __mul__(self, v):
+        import numbers
         if isinstance(v, Vector):
-            return scalar_product(v)
-        elif isinstance(v, Number):
-            return scale(v)
+            return self.scalar_product(v)
+        elif isinstance(v, numbers.Number):
+            return self.scale(v)
         raise TypeError
     
     def __div__(self, n):
@@ -121,10 +122,10 @@ class Timer(object):
     
     @property
     def now(self):
-        return _time
+        return self._time
     
     def tick(self):
-        count()
+        self.count()
         if self._is_end():
             if self._f_loop:
                 self.reset()

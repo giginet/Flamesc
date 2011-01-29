@@ -13,8 +13,8 @@ class Paper(pygame.Sprite):
     def __init__(self, x=0, y=0):
         self.image = Image(0,0,self._filepath)
         self.hitrect = Rect(x,y, self.image.width, self.image.height)
+        self.v = Vector()
+        self.gravity = Vector()
         
     def render(self):
         self.image.render()
-        
-    
