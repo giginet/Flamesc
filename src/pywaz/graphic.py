@@ -5,11 +5,11 @@ from pygame.locals import *
 from core import *
 import os
 
-class Image(pygame.sprite.Sprite):
+class Image(pygame.rect.Rect):
     def __init__(self, x=0 ,y=0, path=u""):
-        super(Image, self).__init__()
         self.image = pygame.image.load(path).convert()
         self.rect = self.image.get_rect()
+        super(Image, self).__init__(x,y,self.rect.w,self.rect.h)
         self.width = self.rect.width
         self.height = self.rect.height
         self.x = x

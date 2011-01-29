@@ -11,7 +11,7 @@ import settings
 
 
 class Player(Paper):
-    _filepath = u"../resources/image/kawaz.png"
+    _filepath = u"../resources/image/player.png"
     INITIAL = Vector(0,0)
     
     def __init__(self):
