@@ -1,9 +1,9 @@
-#Sat Jan 29 10:45:20 JST 2011
+#Sat Jan 29 11:01:33 JST 2011
 eclipse.preferences.version=1
 encoding//src/main.py=utf-8
 encoding//src/paper.py=utf-8
+encoding//src/player.py=utf-8
 encoding//src/pywaz/core.py=utf-8
 encoding//src/pywaz/graphic.py=utf-8
 encoding//src/scenes.py=utf-8
 encoding//src/settings.py=utf-8
-encoding/player.py=utf-8

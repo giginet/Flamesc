@@ -5,6 +5,7 @@ from pywaz.core import *
 from pywaz.input import *
 from pywaz.utils import *
 from pywaz.graphic import *
+from player import *
 
 
 class TitleScene(Scene):
@@ -20,8 +21,7 @@ class TitleScene(Scene):
 
 class MainScene(Scene):
     def __init__(self):
-        #テスト用マップ
-        pass
+        self.player = Player()
    
     def act(self):
         pass
