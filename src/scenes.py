@@ -24,7 +24,7 @@ class MainScene(Scene):
         self.player = Player()
    
     def act(self):
-        pass
+        self.player.act()
    
     def render(self):
-        pass
+        self.player.render()

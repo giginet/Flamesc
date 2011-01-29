@@ -11,14 +11,14 @@ import settings
 
 
 class Player(Paper):
-    _filepath = u"/resources/image/kawaz.png"
-    INITIAL = {'x':0, 'y':0}
+    _filepath = u"../resources/image/kawaz.png"
+    INITIAL = Vector(0,0)
     
     def __init__(self):
-        super(Paper, self).__init__(self.INITIAL.x, self.INITIAL.y)
+        super(Player, self).__init__(self.INITIAL.x, self.INITIAL.y)
         
     def act(self):
-        pass
+        super(Player, self).act()
     
     def proceed(self):
         pass
